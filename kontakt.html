@@ -35,22 +35,29 @@
 					<div class="box">
 						<div>
 							<h2>Kontakt <span>Forma</span> (izgleda ispravno u Google Chrome)</h2>
-							<form id="kontaktForma">
+							<form id="kontaktForma" name="kontaktForma" action="demo_form.asp" onsubmit="return validacija()" method="post">
 								<div>
-									<div class="wrapper">
-										<span>Vaše ime:</span>
-										<input type="text" class="input" >
+									<div class="wrapper" name="ime">
+										<span id="kontaktForma_obavezno">&#42</span><span>Ime:</span>
+										<input type="text" class="input" name="">
+										<!-- <img src="slike/error.png" alt="greska"> -->
 									</div>
 									<div class="wrapper">
-										<span>Vaš E-mail:</span>
-										<input type="text" class="input" >								
+										<span id="kontaktForma_obavezno">&#42</span><span>Telefon:</span>
+										<input type="broj" class="input">
+									</div>
+									<div class="wrapper">
+										<span id="kontaktForma_obavezno">&#42</span><span>Mail:</span>
+										<input type="text" class="input">								
 									</div>
 									<div class="textarea_box">
-										<span>Vaša poruka:</span>
+										<span id="kontaktForma_obavezno">&#42</span><span>Poruka:</span>
 										<textarea name="textarea" cols="1" rows="1"></textarea>								
 									</div>
-									<a href="#" class="dugme1" onClick="document.getElementById('kontaktForma').submit()">Pošalji</a>
-									<a href="mailto:anesadra@gmail.com" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
+									<a href="" class="dugme1" onClick="validacijaBroja()">Pošalji</a>
+									</script>
+									<label id="kontaktForma_dodatno">&#42;&nbsp;Obavezna polja.</label>
+									<a href="#" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
 								</div>
 							</form>
 						</div>
@@ -104,7 +111,7 @@
 				</section>
 				<section class="col-1-4">
 					<div class="wrap-col">
-						<h3>Copyright © 2015<br>Restoran Aurora, Sarajevo</h3>
+						<h3>&nbsp; Copyright © 2015<br>&nbsp; Restoran Aurora, Sarajevo</h3>
 						<ul id="ikone">
 							<li>
 								<a href="https://www.google.ba/maps/place/Velika+Aleja/data=!4m2!3m1!1s0x4758ca71fbb0b335:0xb67b017264e23e99?sa=X&ei=hN4WVcrqIYT3UKyagNgC&ved=0CBsQ8gEwAA" class="normaltip" title="Location"><img src="slike/ikona4.png" alt=""></a>
