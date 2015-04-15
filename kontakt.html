@@ -40,30 +40,32 @@
 				<div class="wrap">
 					<div class="box">
 						<div>
-							<h2>Kontakt <span>Forma</span> (izgleda ispravno u Google Chrome)</h2>
+							<h2>Kontakt <span>Forma</span></h2>
 							<form id="kontaktForma" name="kontaktForma" action="demo_form.asp" onsubmit="return validacija()" method="post">
 								<div>
 									<div class="wrapper" name="ime">
 										<span id="kontaktForma_obavezno">&#42</span><span>Ime:</span>
-										<input type="text" class="input" name="">
-										<!-- <img src="slike/error.png" alt="greska"> -->
+										<input id="ime" name="ime" type="text" onblur="validacijaIme()">
+										<div class="error" id="errorIme"></div>
 									</div>
 									<div class="wrapper">
-										<span id="kontaktForma_obavezno">&#42</span><span>Telefon:</span>
-										<input type="broj" class="input">
+										<span id="kontaktForma_obavezno" placeholder="mail@example.com">&#42</span><span>Mail:</span>
+										<input id="mail" name="mail" type="text" onblur="validacijaMail()">
+										<div class="error" id="errorMail"></div>	
 									</div>
 									<div class="wrapper">
-										<span id="kontaktForma_obavezno">&#42</span><span>Mail:</span>
-										<input type="text" class="input">								
+										<span>&nbsp;&nbsp;&nbsp;&nbsp;Telefon:</span>
+										<input id="telefon" name="telefon" type="text" onblur="validacijaTelefon()">	
+										<div class="error" id="errorTelefon"></div>						
 									</div>
-									<div class="textarea_box">
+									<div class="wrapper">
 										<span id="kontaktForma_obavezno">&#42</span><span>Poruka:</span>
-										<textarea name="textarea" cols="1" rows="1"></textarea>								
+										<textarea id="poruka" name="poruka" onblur="validacijaPoruka()"></textarea>
+										<div class="error" id="errorPoruka">Unesite poruku!</div>
 									</div>
-									<a href="" class="dugme1" onClick="validacijaBroja()">Pošalji</a>
-									</script>
+									<a href="" id="posalji" class="dugme1" type="button">Pošalji</a>
 									<label id="kontaktForma_dodatno">&#42;&nbsp;Obavezna polja.</label>
-									<a href="#" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
+									<a href="#" id="izbrisi" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
 								</div>
 							</form>
 						</div>
@@ -139,5 +141,6 @@
 	</div>
 </div>
 <script src="js/submeni.js"></script>
+<script src="js/kontaktForma.js"></script>
 </body>
 </html>

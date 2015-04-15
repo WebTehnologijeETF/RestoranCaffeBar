@@ -229,9 +229,10 @@ footer a:hover {text-decoration:none}
 #kontaktForma span {
   float:left;
   width:15px;
-  line-height:20px
+  line-height:20px;
+  text-align: right
 }
-#kontaktForma .wrapper {min-height:24px}
+#kontaktForma .wrapper {min-height:28px}
 #kontaktForma .textarea_box {
   min-height:170px;
   width:100%;
@@ -241,8 +242,8 @@ footer a:hover {text-decoration:none}
 #kontaktForma {}
 #kontaktForma a {
   margin:10px; 
-  margin-right: -415px;
-  margin-left: 315px
+  margin-right: -320px;
+  margin-left: 190px
 }
 #kontaktForma .input {
   width:70%;
@@ -254,18 +255,60 @@ footer a:hover {text-decoration:none}
   margin:30px;
   float:left
 }
+
+#ime {
+  width: 50%;
+  margin-left: 50px;  
+  border-radius: 2px;
+  background: #faf3ed;
+  height: 22px
+}
+#mail {
+  width: 50%;
+  margin-left: 51px;
+  border-radius: 2px;
+  background: #faf3ed;
+  height: 22px
+}
+#telefon {
+  width: 50%;
+  margin-left: 66px;  
+  border-radius: 2px;
+  background: #faf3ed;
+  height: 22px
+}
+
+#poruka {
+  background: #faf3ed;
+  width: 50%;
+  margin-left: 65px;
+  border-radius: 2px;
+}
+
 #kontaktForma textarea {
   overflow:auto;
-  width:70%;
+  width:57%;
   height:163px;
   background:#faf3ed;
   padding:1px 5px;
   color:#220000;
   font:14px Georgia, "Times New Roman", Times, serif;
-  margin:30px
+  margin-left: -20px;
+  margin-top: 25px
 }
 #kontaktForma_obavezno {color: red;}
 #kontaktForma_dodatno {color: red;}
+
+.error {
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    height: 22px;
+    margin-left: 515px;
+    margin-right: 165px;
+}
 
 .col1, .col2, .col3, .cols {float:left}
 .cols {width:300px}
@@ -356,6 +399,7 @@ nav ul li:hover > ul {
 }
 
 
+/* submeni */
 #submeni {
   display: none;
   position: absolute;
