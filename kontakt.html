@@ -49,7 +49,7 @@
 										<div class="error" id="errorIme"></div>
 									</div>
 									<div class="wrapper">
-										<span id="kontaktForma_obavezno" placeholder="mail@example.com">&#42</span><span>Mail:</span>
+										<span id="kontaktForma_obavezno">&#42</span><span>Mail:</span>
 										<input id="mail" name="mail" type="text" onblur="validacijaMail()">
 										<div class="error" id="errorMail"></div>	
 									</div>
@@ -65,7 +65,8 @@
 									</div>
 									<a href="" id="posalji" class="dugme1" type="button">Pošalji</a>
 									<label id="kontaktForma_dodatno">&#42;&nbsp;Obavezna polja.</label>
-									<a href="#" id="izbrisi" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
+									<a href="#" id="izbrisi" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>
+									<div class="error" id="errorIme"></div>		
 								</div>
 							</form>
 						</div>

@@ -5,15 +5,15 @@ function validacijaIme() {
 
     if (ime.value.length == 0) {
         ime.style.backgroundColor="red";
-        document.getElementById("errorIme").style.display="block";
-		document.getElementById("errorIme").innerHTML="Morate unijeti ime!";
-        validno = false;
+		document.getElementById("slikaUpozorenje").src='slike/error.png';
+		document.getElementById("errorIme").innerHTML="Morate unijeti ime!";		
+        valid = false;
     }
     else if (!ime.value.match(/^[a-zA-Z ČčĆćŽžŠšĐđ]+$/)) {
         ime.style.backgroundColor="red";
         document.getElementById("errorIme").style.display="block";
         document.getElementById("errorIme").innerHTML="Ispravno unesite ime!";
-        validno = false;
+        valid = false;
     }
     else {
         ime.style.backgroundColor="#faf3ed";
@@ -24,7 +24,7 @@ function validacijaIme() {
 function validacijaMail() {
     var mail = document.getElementById("mail");
 
-    if (mail.value.length == 0 ) {
+    if (mail.value.length == 0) {
         mail.style.backgroundColor="red";
         document.getElementById("errorMail").style.display="block";
         document.getElementById("errorMail").innerHTML="Morate unijeti mail!";
@@ -45,7 +45,7 @@ function validacijaMail() {
 function validacijaTelefon() {
     var telefon = document.getElementById("telefon");
 
-	if (mail.value.length == 0 ) {
+	if (mail.value.length == 0) {
         mail.style.backgroundColor="red";
         document.getElementById("errorTelefon").style.display="block";
         document.getElementById("errorTelefon").innerHTML="xxxxx-xx-xxx-xxx";
@@ -69,7 +69,7 @@ function validacijaPoruka() {
         poruka.style.backgroundColor="red";
         document.getElementById("errorPoruka").style.display="block";
 		document.getElementById("errorPoruka").innerHTML="Unesite poruku!";
-        sveValidno = false;
+        valid = false;
     }
     else {
         poruka.style.backgroundColor="#faf3ed";
@@ -79,14 +79,15 @@ function validacijaPoruka() {
 
 $(document).ready(function(){
     $("#posalji").click(function(){
-        valid = true;
+		
 		validacijaIme();
         validacijaMail();
         validacijaPoruka();
+		validacijaTelefon();
 
         var posalji = document.getElementById("posalji");
         if (true == valid) {
             posalji.type = "submit";
-        }
+        }		
     });
 });

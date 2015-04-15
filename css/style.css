@@ -310,6 +310,8 @@ footer a:hover {text-decoration:none}
     margin-right: 165px;
 }
 
+#slikaUpozorenje { visibility: hidden;}
+
 .col1, .col2, .col3, .cols {float:left}
 .cols {width:300px}
 .col1 {width:630px}
