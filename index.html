@@ -24,7 +24,13 @@
 					<nav>
 						<ul id="meni">
 							<li class="active"><a href="index.html">Naslovnica</a></li>
-							<li><a href="galerija.html">Galerija</a></li>
+							<li id="galerija" onmouseover="galerija_Prikazi()" onmouseout="galerija_Sakrij()"><a href="galerija.html">Galerija</a>
+								<ul id="submeni" onmouseover="galerija_Prikazi()">
+									<li><a href="galerija.html#sadrzaj2">Enterijer</a></li>
+									<li><a href="galerija.html#sadrzaj2">Eksterijer</a></li>
+									<li><a href="galerija.html#sadrzaj2">Ponuda</a></li>
+								</ul>
+							</li>
 							<li><a href="meni.html">Meni</a></li>
 							<li><a href="recepti.html">Recepti</a></li>
 							<li><a href="kontakt.html">Kontakt</a></li>
@@ -94,14 +100,16 @@
 											<figure class="left marg_right1"><img src="slike/str1_slika4.jpg" alt=""></figure>
 											<p>
 												<a href="#">21.03. Naslov</a><br>
-												Opis.
+												Opis.<br>
+												<br> Anesa Drakovac
 											</p>
 										</div>
 										<div class="wrapper">
 											<figure class="left marg_right1"><img src="slike/str1_slika5.jpg" alt=""></figure>
 											<p>
 												<a href="#">22.03. Naslov</a><br>
-												Opis.
+												Opis.<br>
+												<br> Anesa Drakovac
 											</p>
 										</div>
 									</div>
@@ -112,14 +120,16 @@
 											<figure class="left marg_right1"><img src="slike/str1_slika6.jpg" alt=""></figure>
 											<p>
 												<a href="#">23.3. Naslov</a><br>
-												Opis.
+												Opis.<br>
+												<br> Anesa Drakovac
 											</p>
 										</div>
 										<div class="wrapper">
 											<figure class="left marg_right1"><img src="slike/str1_slika7.jpg" alt=""></figure>
 											<p>
 												<a href="#">24.3. Naslov</a> <br>
-												Opis.
+												Opis.<br>
+												<br> Anesa Drakovac
 											</p>
 										</div>
 									</div>
@@ -183,12 +193,13 @@
 							</div>
 						</section>
 						<audio controls loop autoplay>
-								<source src="music/song.mp3" type="audio/mpeg">
+								<source src="music/song1.mp3" type="audio/mpeg">
 						</audio>
 					</div>
 				</footer>
 			</div>
 		</div>
 	</div>
+	<script src="js/submeni.js"></script>
 </body>
 </html>

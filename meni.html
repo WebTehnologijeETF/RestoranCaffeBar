@@ -23,7 +23,13 @@
 					<nav>
 						<ul id="meni">
 							<li><a href="index.html">Naslovnica</a></li>
-							<li><a href="galerija.html">Galerija</a></li>
+							<li id="galerija" onmouseover="galerija_Prikazi()" onmouseout="galerija_Sakrij()"><a href="galerija.html">Galerija</a>
+								<ul id="submeni" onmouseover="galerija_Prikazi()">
+									<li><a href="galerija.html#sadrzaj2">Enterijer</a></li>
+									<li><a href="galerija.html#sadrzaj2">Eksterijer</a></li>
+									<li><a href="galerija.html#sadrzaj2">Ponuda</a></li>
+								</ul>
+							</li>
 							<li class="active"><a href="meni.html">Meni</a></li>
 							<li><a href="recepti.html">Recepti</a></li>
 							<li><a href="kontakt.html">Kontakt</a></li>
@@ -136,5 +142,6 @@
 		</footer>
 	</div>
 </div>
+<script src="js/submeni.js"></script>
 </body>
 </html>

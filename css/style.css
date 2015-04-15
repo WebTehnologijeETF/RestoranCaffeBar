@@ -346,3 +346,35 @@ img {
 }
 * { border:none}
 audio { background: black }
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+
+#submeni {
+  display: none;
+  position: absolute;
+  width: 50px
+}
+
+#submeni > li {
+  padding: 2px;
+  margin: 1px;
+  background-color: black;
+  position: none;
+  width: 200px;
+}
+
+#submeni > li > a {
+  text-decoration: none;
+    color: white;
+}
+
+#submeni > li:hover {
+    background-color: white;
+}
