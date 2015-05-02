@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Aurora - Meni</title>
+		<title>Aurora | Meni</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -12,27 +12,29 @@
 		<div class="body1">
 			<div class="main grid">
 				<header>
-					<h1><a href="index.html" id="logo"><img src="slike/logo.png" alt=""></a></h1>
+					<a onclick="ucitavajStranicuAsinhrono('index.html')">
+						<h1><img src="slike/logo.png" alt=""></h1>
+					</a>
 					<nav>
 						<ul id="vrh_nav">
-							<li><a href="index.html"><img src="slike/ikona_1.gif" alt=""></a></li>
-							<li><a href="galerija.html"><img src="slike/ikona_2.gif" alt=""></a></li>
-							<li class="kraj"><a href="kontakt.html"><img src="slike/ikona_3.gif" alt=""></a></li>
+							<li><a onclick="ucitajStranicuAsinhrono('index.html')"><img src="slike/ikona_1.gif" alt=""></a></li>
+							<li><a onclick="ucitajStranicuAsinhrono('galerija.html')"><img src="slike/ikona_2.gif" alt=""></a></li>
+							<li class="kraj"><a onclick="ucitajStranicuAsinhrono('kontakt.html')"><img src="slike/ikona_3.gif" alt=""></a></li>
 						</ul>
 					</nav>
 					<nav>
 						<ul id="meni">
-							<li><a href="index.html">Naslovnica</a></li>
-							<li id="galerija" onmouseover="galerija_Prikazi()" onmouseout="galerija_Sakrij()"><a href="galerija.html">Galerija</a>
+							<li><a onclick="ucitajStranicuAsinhrono('index.html')">Naslovnica</a></li>
+							<li id="galerija" onmouseover="galerija_Prikazi()" onmouseout="galerija_Sakrij()"><a onclick="ucitajStranicuAsinhrono('galerija.html')">Galerija</a>
 								<ul id="submeni" onmouseover="galerija_Prikazi()">
-									<li><a href="galerija.html#sadrzaj2">Enterijer</a></li>
-									<li><a href="galerija.html#sadrzaj2">Eksterijer</a></li>
-									<li><a href="galerija.html#sadrzaj2">Ponuda</a></li>
+									<li><a onclick="ucitajStranicuAsinhrono('galerija.html')">Enterijer</a></li>
+									<li><a onclick="ucitajStranicuAsinhrono('galerija.html')">Eksterijer</a></li>
+									<li><a onclick="ucitajStranicuAsinhrono('galerija.html')">Ponuda</a></li>
 								</ul>
 							</li>
-							<li class="active"><a href="meni.html">Meni</a></li>
-							<li><a href="recepti.html">Recepti</a></li>
-							<li><a href="kontakt.html">Kontakt</a></li>
+							<li class="active"><a onclick="ucitajStranicuAsinhrono('meni.html')">Meni</a></li>
+							<li><a onclick="ucitajStranicuAsinhrono('recepti.html')">Recepti</a></li>
+							<li><a onclick="ucitajStranicuAsinhrono('kontakt.html')">Kontakt</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -145,5 +147,6 @@
 	</div>
 </div>
 <script src="js/submeni.js"></script>
+<script src="js/ucitajStranicuAsinhrono.js"></script>
 </body>
 </html>

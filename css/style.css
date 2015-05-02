@@ -416,3 +416,22 @@ nav ul li:hover > ul {
 #submeni > li:hover {
     background-color: white;
 }
+
+table#tabelaProizvoda { text-align: center; }
+
+div#tabelaProizvodaDiv {
+    max-height: 800px;
+    overflow: scroll;
+}
+
+element.style {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid black;
+  border-radius: 5px; 
+  padding: 5px
+}
