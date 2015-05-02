@@ -5,7 +5,7 @@ function validacijaIme() {
 
     if (ime.value.length == 0) {
         ime.style.backgroundColor="red";
-		document.getElementById("slikaUpozorenje").src='slike/error.png';
+		document.getElementById("errorIme").style.display="block";
 		document.getElementById("errorIme").innerHTML="Morate unijeti ime!";		
         valid = false;
     }

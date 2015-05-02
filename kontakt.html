@@ -12,7 +12,7 @@
 	<div class="body1">
 		<div class="main grid">
 			<header>
-				<h1><a href="index.html" id="logo"><img src="slike/logo.png"></a></h1>
+				<h1><a href="index.html" id="logo"><img src="slike/logo.png" alt=""></a></h1>
 				<nav>
 					<ul id="vrh_nav">
 						<li><a href="index.html"><img src="slike/ikona_1.gif" alt=""></a></li>
@@ -43,30 +43,29 @@
 							<h2>Kontakt <span>Forma</span></h2>
 							<form id="kontaktForma" name="kontaktForma" action="demo_form.asp" onsubmit="return validacija()" method="post">
 								<div>
-									<div class="wrapper" name="ime">
-										<span id="kontaktForma_obavezno">&#42</span><span>Ime:</span>
+									<div class="wrapper">
+										<span>*Ime:</span>
 										<input id="ime" name="ime" type="text" onblur="validacijaIme()">
 										<div class="error" id="errorIme"></div>
 									</div>
 									<div class="wrapper">
-										<span id="kontaktForma_obavezno">&#42</span><span>Mail:</span>
+										<span>*Mail:</span>
 										<input id="mail" name="mail" type="text" onblur="validacijaMail()">
 										<div class="error" id="errorMail"></div>	
 									</div>
 									<div class="wrapper">
-										<span>&nbsp;&nbsp;&nbsp;&nbsp;Telefon:</span>
+										<span>&nbsp;&nbsp;Tel:</span>
 										<input id="telefon" name="telefon" type="text" onblur="validacijaTelefon()">	
 										<div class="error" id="errorTelefon"></div>						
 									</div>
 									<div class="wrapper">
-										<span id="kontaktForma_obavezno">&#42</span><span>Poruka:</span>
+										<span>*Poruka:</span>
 										<textarea id="poruka" name="poruka" onblur="validacijaPoruka()"></textarea>
 										<div class="error" id="errorPoruka">Unesite poruku!</div>
 									</div>
-									<a href="" id="posalji" class="dugme1" type="button">Pošalji</a>
-									<label id="kontaktForma_dodatno">&#42;&nbsp;Obavezna polja.</label>
-									<a href="#" id="izbrisi" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>
-									<div class="error" id="errorIme"></div>		
+									<a href="" id="posalji" class="dugme1">Pošalji</a> <!-- prije je bilo i type="button"-->
+									<label id="kontaktForma_dodatno">&nbsp;* Obavezna polja.</label>
+									<a href="#" id="izbrisi" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
 								</div>
 							</form>
 						</div>
@@ -123,7 +122,7 @@
 						<h3>&nbsp; Copyright © 2015<br>&nbsp; Restoran Aurora, Sarajevo</h3>
 						<ul id="ikone">
 							<li>
-								<a href="https://www.google.ba/maps/place/Velika+Aleja/data=!4m2!3m1!1s0x4758ca71fbb0b335:0xb67b017264e23e99?sa=X&ei=hN4WVcrqIYT3UKyagNgC&ved=0CBsQ8gEwAA" class="normaltip" title="Location"><img src="slike/ikona4.png" alt=""></a>
+								<a href="https://www.google.ba/maps/place/Velika+Aleja,+Ilid%C5%BEa/@43.8226402,18.2958098,17z/data=!3m1!4b1!4m2!3m1!1s0x4758ca71fbb0b335:0xb67b017264e23e9" class="normaltip" title="Location"><img src="slike/ikona4.png" alt=""></a>
 							</li>
 							<li>	
 								<a href="#" class="normaltip" title="Twitter"><img src="slike/ikona3.png" alt=""></a>
