@@ -13,4 +13,13 @@ Web stranica je namijenjena za imaginarni Restoran Aurora. Moguće je da će se 
 
 Zbog sporadične podrške za HTML5, formular izgleda potpuno ispravno na Google Chrome browseru.
 
-Dodatno: Ako može omogućite mi da izmijenim naziv repozitorija u "Restoran" (prethodno "RestoranCaffeBar").
+U nazivu bi trebalo pisati "Restoran" (prethodno "RestoranCaffeBar").
+
+Druga spirala: 
+- Padajući meni je na opciji Galerija u glavnom meniju
+- Pored polja koje ne zadovoljava uslove validnosti nisam stavljali sličicu već promjenu boje tog polja uz odgovarajuću poruku
+- Nisam ubacila zavisnost jednog polja od drugog
+
+Treća spirala:
+- Korišten validacijski servis http://zamger.etf.unsa.ba/wt/srednja_skola.php
+- Web servis proizvodi.php je korišten u padajućem meniju, opcija 'Ponuda'
