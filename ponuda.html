@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Aurora | Galerija</title>
+		<title>Aurora | Ponuda</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -13,7 +13,7 @@
 		<div class="body1">
 			<div class="main grid">
 				<header>
-					<a onclick="ucitavajStranicuAsinhrono('index.html')">
+					<a onclick="ucitajStranicuAsinhrono('index.html')">
 						<h1><img src="slike/logo.png" alt=""></h1>
 					</a>
 					<nav>
@@ -63,42 +63,100 @@
 <div class="body2">
 	<div class="main grid">
 		<article id="sadrzaj2">
-			<div class="wrapper">
-				<section>
-					<h2><br>Stavke</h2>
-					<div id="tabelaProizvodaDiv" class="wrapper">
-						<table id="tabelaProizvoda">
-							<tbody>
-								<tr>
-									<th>Id</th>
-									<th>Naziv</th>
-									<th>Opis</th>
-									<th>Slika</th>
-									<th>Url</th>
-									<th>Cijena</th>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Miješano meso</td>
-									<td>Neki opis ...................... </td>
-									<td><img src="slike/galerija1.jpg" alt=""></td>
-									<td><a href=""></a>Link</td>
-									<td>25 KM</td>
-										
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Rolovana piletina ala pizzaiola</td>
-									<td>Neki opis ...................... </td>
-									<td><img src="slike/galerija2.jpg" alt=""></td>
-									<td><a href=""></a>Link</td>
-									<td>18 KM</td>
-								</tr>						
-							</tbody>
-						</table>
-					</div>
-				</section>
-			</div>
+			<main id="obrada-glavno">
+     			<div id="tabelaProizvodaDiv">
+           			<table id="tabelaProizvoda"></table>
+        		</div>
+
+	        	<div id="funkcije">
+	            	<h2 class="naslovProizvodi">Odaberite mogućnost za pojedinačni rad:</h2>
+	            	<select id="odabir" onchange="izmjenaOdabir()">
+	                	<option>Dodavanje</option>
+	                	<option>Izmjena</option>
+	                	<option>Brisanje</option>
+	            	</select>
+	            	
+	            	<div id="dodavanje">
+                		<h2 class="naslovProizvodi">Dodavanje</h2>
+                		<table>
+		                    <tr>
+		                        <td>Naziv:</td>
+		                        <td><input type="text" id="nazivDodavanje"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Opis:</td>
+		                        <td><input type="text" id="opisDodavanje"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Slika:</td>
+		                        <td><input type="text" id="slikaDodavanje"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Url:</td>
+		                        <td><input type="text" id="urlDodavanje"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Cijena:</td>
+		                        <td><input type="text" id="cijenaDodavanje"></td>
+		                    </tr>
+                		</table>
+
+                		<button id="dodaj" class="dugme1" onclick="dodaj()">OK</button>
+                		<span id="errorDodaj"></span>
+            		</div>
+
+            		<div id="brisanje">
+		                <h3 class="naslovProizvodi">Brisanje</h2>
+		                <table>
+		                    <tr>
+		                        <td>
+		                            Id:
+		                        </td>
+		                        <td>
+		                            <select id="idBrisanje"></select>
+		                        </td>
+		                    </tr>
+		                </table>
+
+		                <button id="obrisi" class="dugme1" onclick="obrisi()">OK</button>
+		                <span id="errorObrisi"></span>
+		            </div>
+
+            		<div id="izmjena">
+            			<h2 class="naslovProizvodi">Izmjena</h2>
+		                <table>
+		                    <tr>
+		                        <td>Id:</td>
+		                        <td><select id="idIzmjena" onchange="izmjenaIzmjene()"></select></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Naziv:</td>
+		                        <td><input type="text" id="nazivIzmjena"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Opis:</td>
+		                        <td><input type="text" id="opisIzmjena"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Slika:</td>
+		                        <td><input type="text" id="slikaIzmjena"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Url:</td>
+		                        <td><input type="text" id="urlIzmjena"></td>
+		                    </tr>
+		                    <tr>
+		                        <td>Cijena:</td>
+		                        <td><input type="text" id="cijenaIzmjena"></td>
+		                    </tr>
+		                </table>
+
+		                <button id="izmijeni" class="dugme1" onclick="izmijeni()">OK</button>
+		                <span id="errorIzmijeni"></span>
+            		</div>
+
+	        	</div>
+    		</main>
 		</article>
 	</div>
 </div>
@@ -134,5 +192,6 @@
 </div>
 <script src="js/submeni.js"></script>
 <script src="js/ucitajStranicuAsinhrono.js"></script>
+<script src="js/proizvodi.js"></script>
 </body>
 </html>

@@ -273,12 +273,25 @@ footer a:hover {text-decoration:none}
   background: #faf3ed;
   height: 22px
 }
-
 #poruka {
   background: #faf3ed;
   width: 50%;
   margin-left: 65px;
   border-radius: 2px;
+}
+#opcina {
+  width: 50%;
+  margin-left: 50px;  
+  border-radius: 2px;
+  background: #faf3ed;
+  height: 22px
+}
+#skola {
+  width: 50%;
+  margin-left: 50px;  
+  border-radius: 2px;
+  background: #faf3ed;
+  height: 22px
 }
 
 #kontaktForma textarea {
