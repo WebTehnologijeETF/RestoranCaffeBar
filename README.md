@@ -13,7 +13,7 @@ Web stranica je namijenjena za imaginarni Restoran Aurora. Moguće je da će se 
 
 Zbog sporadične podrške za HTML5, formular izgleda potpuno ispravno na Google Chrome browseru.
 
-U nazivu bi trebalo pisati "Restoran" (prethodno "RestoranCaffeBar").
+U nazivu bi trebalo pisati "RestoranAurora" (prethodno "RestoranCaffeBar").
 
 Druga spirala: 
 - Padajući meni je na opciji Galerija u glavnom meniju
