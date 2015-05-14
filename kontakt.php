@@ -12,6 +12,13 @@
 	<div class="body1">
 		<div class="main grid">
 			<?php include("zaglavlje.php"); ?>
+
+			<?php include('novosti_skripte/validacijaMailaServer.php'); ?>
+		    
+		    <?php if(isset($_POST['ime']) && isset($_POST['mail']) && isset($_POST['ponovniMail']) && isset($_POST['poruka']) && ($_POST['ime']) && validacijaMail($_POST['mail']) && validacijaPonovniMail($_POST['mail'], $_POST['ponovniMail']) && validacijaPoruka($_POST['poruka'])) ; ?>
+			
+			<!--<?php include("novosti_skripte/potvrda.php"); ?>-->
+
 			<article id="sadrzaj">
 				<div class="wrap">
 					<div class="box">
@@ -21,13 +28,18 @@
 								<div>
 									<div class="wrapper">
 										<span>*Ime:</span>
-										<input id="ime" name="ime" type="text" onblur="validacijaIme()">
-										<div class="error" id="errorIme"></div>
+										<input id="ime" name="ime" type="text" <?php if(isset($_POST['ime'])){ if(validirajIme($_POST['ime'])) echo "class='errorPolje'"; else echo "class='errorPolje'";} ?> onblur="validacijaIme()" value="<?php if(isset($_REQUEST['ime'])) echo $_REQUEST['ime']; else echo ""; ?>">
+										<div class="error" id="errorIme" <?php if(isset($_POST['ime'])){ if(validacijaIme($_POST['ime'])) echo ""; else echo "style='display: block'";} ?>>Pogrešno ime</div>
 									</div>
 									<div class="wrapper">
 										<span>*Mail:</span>
-										<input id="mail" name="mail" type="text" onblur="validacijaMail()">
-										<div class="error" id="errorMail"></div>	
+										<input id="mail" name="mail" type="email" <?php if(isset($_POST['mail'])){ if(validirajIme($_POST['mail'])) echo "class='okPolje'"; else echo "class='neispravnoPolje'";} ?> onblur="validacijaMail()" value="<?php if(isset($_REQUEST['mail'])) echo $_REQUEST['mail']; else echo ""; ?>">
+										<div class="error" id="errorMail" <?php if(isset($_POST['mail'])){ if(validacijaMail($_POST['mail'])) echo "class='errorPolje'"; else echo "class='errorPolje'";} ?>>Pogrešan mail</div>	
+									</div>
+									<div class="wrapper">
+										<span>*Ponovi mail:</span>
+										<input id="ponovniMail" name="ponovniMail" type="email" <?php if(isset($_POST['ponovniMail'])){ if(validirajIme($_POST['ponovniMail'])) echo "class='okPolje'"; else echo "class='errorPolje'";} ?> onblur="validacijaMail()" value="<?php if(isset($_REQUEST['ponovniMail'])) echo $_REQUEST['ponovniMail']; else echo ""; ?>">
+										<div class="error" id="errorMail" <?php if(isset($_POST['ponovniMail'])){ if(validacijaPonovniMail($_POST['ponovniMail'])) echo "class='errorPolje'"; else echo "class='errorPolje'";} ?>>Mailovi se ne podudaraju!</div>	
 									</div>
 									<div class="wrapper">
 										<span>&nbsp;&nbsp;Tel:</span>
@@ -36,20 +48,20 @@
 									</div>
 									<div class="wrapper">
 										<span>Općina:</span>
-										<input id="opcina" name="opcina" type="text" onblur="validacijaOpcina()">	
+										<input id="opcina" name="opcina" type="text" value="<?php if(isset($_REQUEST['opcina'])) echo $_REQUEST['opcina']; else echo ""; ?>" onblur="validacijaOpcina()">	
 										<div class="error" id="errorOpcina"></div>						
 									</div>
 									<div class="wrapper">
 										<span>Srednja škola:</span>
-										<input id="skola" name="skola" type="text" onblur="validacijaSkola()">	
+										<input id="skola" name="skola" type="text" value="<?php if(isset($_REQUEST['skola'])) echo $_REQUEST['skola']; else echo ""; ?>" onblur="validacijaSkola()">	
 										<div class="error" id="errorSkola"></div>						
 									</div>
 									<div class="wrapper">
 										<span>*Poruka:</span>
-										<textarea id="poruka" name="poruka" onblur="validacijaPoruka()"></textarea>
-										<div class="error" id="errorPoruka">Unesite poruku!</div>
+										<textarea id="poruka" name="poruka" onblur="validacijaPoruka()"><?php if(isset($_POST['poruka'])) echo $_POST['poruka']; else echo ""; ?></textarea>
+										<div class="error" id="errorPoruka" <?php if(isset($_POST['poruka'])){ if(validacijaPoruka($_POST['poruka'])) echo ""; else echo "style='display: block'";} ?>>Unesite poruku!</div>
 									</div>
-									<a href="" id="posalji" class="dugme1">Pošalji</a> <!-- prije je bilo i type="button"-->
+									<a href="" id="posalji" class="dugme1">Pošalji</a>
 									<label id="kontaktForma_dodatno">&nbsp;* Obavezna polja.</label>
 									<a href="#" id="izbrisi" class="dugme1" onClick="document.getElementById('kontaktForma').reset()">Izbriši</a>		
 								</div>

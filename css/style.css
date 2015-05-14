@@ -252,6 +252,25 @@ footer a:hover {text-decoration:none}
   float:left
 }
 
+div#prikazL {
+    float: left;
+    width: 100px;
+    padding-left: 100px;
+}
+div#prikazL p {
+    text-align: right;
+}
+div#prikazD {
+    float: left;
+    width: 500px;
+    padding-left: 20px;
+}
+
+div#potvrda {
+    width: 720px;
+    float: left;
+}
+
 #ime {
   width: 50%;
   margin-left: 50px;  
@@ -260,6 +279,13 @@ footer a:hover {text-decoration:none}
   height: 22px
 }
 #mail {
+  width: 50%;
+  margin-left: 51px;
+  border-radius: 2px;
+  background: #faf3ed;
+  height: 22px
+}
+#ponovniMail {
   width: 50%;
   margin-left: 51px;
   border-radius: 2px;
@@ -308,6 +334,8 @@ footer a:hover {text-decoration:none}
 #kontaktForma_obavezno {color: red;}
 #kontaktForma_dodatno {color: red;}
 
+.errorPolje { background-color: red; }
+.okPolje { background-color: #faf3ed;}
 .error {
     color: white;
     background-color: red;
@@ -447,4 +475,76 @@ td {
   border: 1px solid black;
   border-radius: 5px; 
   padding: 5px
+}
+
+.novost > img {
+    float: right;
+    width: 400px;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+.novostiMaliDio {
+    font-size: 12px;
+}
+.razmak {
+    width: 720px;
+    height: 5px;
+    background-color: #a80002;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.novostiTekst {
+    width: 430px;
+    float: left;
+    word-wrap: break-word;
+    padding-left: 15px;
+}
+.novostiTekstBezSlike {
+    width: 680px;
+    float: left;
+    word-wrap: break-word;
+    padding-left: 15px;
+}
+.novostiTekst > h3, .novostiTekstBezSlike > h3 {
+    position: relative;
+    top: -30px;
+}
+.headerRazmak {
+    width: 720px;
+    height: 15px;
+    background-color: #a80002;
+    float: right;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+#novosti {
+    border: 5px solid #a80002;
+    height: 500px;
+    width: 945px;
+    overflow: auto;
+}
+.novostiBoja {
+    position: relative;
+    top: 5px;
+    background-color: #a80002;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 5px;
+    width: 955px;
+}
+.vise {
+    text-decoration: none;
+    background-color: #a80002;
+    color: white;
+    padding: 5px;
+    position: relative;
+    top: -50px;
+    left: 170px;
+}
+.novost:hover {
+    color: #a80002;
+    border: 2px;
+    border-color: black;
 }
