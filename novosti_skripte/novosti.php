@@ -37,7 +37,7 @@
     $imaDetaljnije = false;
 
     for ($j = 4; $j < count($sadrzaj);$j++) {
-        if($sadrzaj[$j] == "--\r\n" || (strpos($sadrzaj[$j], "--") && strlen($sadrzaj[$j]) == 3)) {
+        if($sadrzaj[$j] == "--\r\n" || $sadrzaj[$j] == "--\n" || (strpos($sadrzaj[$j], "--") && strlen($sadrzaj[$j]) == 3)) {
             $imaDetaljnije = true;
             continue;
         }
