@@ -37,11 +37,6 @@
 										<div class="error" id="errorMail" <?php if(isset($_POST['mail'])){ if(validacijaMail($_POST['mail'])) echo "class='errorPolje'"; else echo "class='errorPolje'";} ?>>Pogrešan mail</div>	
 									</div>
 									<div class="wrapper">
-										<span>*Ponovi mail:</span>
-										<input id="ponovniMail" name="ponovniMail" type="email" <?php if(isset($_POST['ponovniMail'])){ if(validirajIme($_POST['ponovniMail'])) echo "class='okPolje'"; else echo "class='errorPolje'";} ?> onblur="validacijaMail()" value="<?php if(isset($_REQUEST['ponovniMail'])) echo $_REQUEST['ponovniMail']; else echo ""; ?>">
-										<div class="error" id="errorMail" <?php if(isset($_POST['ponovniMail'])){ if(validacijaPonovniMail($_POST['ponovniMail'])) echo "class='errorPolje'"; else echo "class='errorPolje'";} ?>>Mailovi se ne podudaraju!</div>	
-									</div>
-									<div class="wrapper">
 										<span>&nbsp;&nbsp;Tel:</span>
 										<input id="telefon" name="telefon" type="text" onblur="validacijaTelefon()">	
 										<div class="error" id="errorTelefon"></div>						
