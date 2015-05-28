@@ -72,7 +72,8 @@
 							<br>
 						    <div id="novosti">
 						        <div class="headerzlato"></div>
-						        <?php include("novosti_skripte/novosti.php"); ?>
+						        <!-- <?php include("novosti_skripte/novosti.php"); ?> -->
+						        <?php include("novosti_skripte/novostibaza.php"); ?>
 						    </div>
 						</section>
 					</div>
@@ -106,7 +107,7 @@
 								</ul>
 							</div>
 						</section>
-						<audio controls autoplay>
+						<audio controls>
 								<source src="music/song1.mp3" type="audio/mpeg">
 						</audio>
 					</div>

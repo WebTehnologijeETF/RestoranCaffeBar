@@ -23,7 +23,3 @@ Druga spirala:
 Treća spirala:
 - Korišten validacijski servis http://zamger.etf.unsa.ba/wt/srednja_skola.php
 - Web servis proizvodi.php je korišten u padajućem meniju, opcija 'Ponuda'
-
-Četvrta spirala:
-- drugi zadatak (novosti) je cijeli urađen
-- prvi zadatak nije cijeli urađen, imam neku grešku tako da se ne prikazuje na stranici, ali je logika urađena

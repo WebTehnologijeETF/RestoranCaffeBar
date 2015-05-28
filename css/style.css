@@ -500,6 +500,12 @@ td {
     word-wrap: break-word;
     padding-left: 15px;
 }
+.novostiTekstBaza {
+    width: 900px;
+    float: left;
+    word-wrap: break-word;
+    padding-left: 15px;
+}
 .novostiTekstBezSlike {
     width: 680px;
     float: left;
