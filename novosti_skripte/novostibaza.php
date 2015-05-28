@@ -24,6 +24,7 @@
             print "<small> Autor:  " . $vijest['autor'] . "</small><br>";
             print "<small> Datum: " . date("d.m.Y (h:i)", $vijest['vrijeme2']) . "</small><br>";
             print "<br><p>" . $vijest['tekst'] . "</p>";
+            echo '<div class="razmak"></div>';
          }
         ?>
       </div>
