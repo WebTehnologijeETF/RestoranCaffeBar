@@ -13,6 +13,7 @@
 		<div class="body1">	
 			<div class="main grid">
 				<?php include("zaglavlje.php"); ?>
+
 				<article id="sadrzaj">
 					<div class="wrap">
 						<section class="col-1-3">
@@ -20,7 +21,7 @@
 								<div class="box">
 									<div>
 										<h2>Dobrodošli <span>u Auroru</span></h2>
-										<figure><img src="slike/str1_slika1.jpg" alt="" ></figure>
+										<figure><img src="slike/str1_slika1.jpg" width="250" height="150"></figure>
 										<p class="pad_dno1">
 											<br><a href="http://en.wikipedia.org/wiki/Aurora">Značenje imena Aurora<br></a><br>Restoran Aurora je već od samih početaka postala nezaobilazna postaja svih izletnika željnih udobnog ambijenta i vrhunske kuhinje. Oslonite se na iskustvo i profesionalnost osoblja u pružanju ugostiteljskih usluga vrhunske kvalitete. Za sve goste restorana osiguran je i besplatan parking prostor ispred restorana. <br> Ugodno ozračje, ljubazno osoblje te vrhunski domaći specijaliteti ono je po čemu ćete prepoznati restoran Aurora.</p>
 											<a href="#" class="dugme1">Detaljnije...</a>
@@ -33,7 +34,7 @@
 								<div class="box">
 									<div>
 										<h2>O <span>Nama</span></h2>
-										<figure><img src="slike/str1_slika2.jpg" alt="" ></figure>
+										<figure><img src="slike/str1_slika2.jpg" width="250" height="150"></figure>
 										<p class="pad_dno1">
 											<br>Cilj Aurore je:<br>Vaše zadovoljstvo i uživanje. Želja je da uživate u izvrsnoj hrani, piću, usluzi, prirodi i neposrednoj domaćinskoj atmosferi, uz prihvatljive cijene. Ako Aurori pružite priliku za obilježavanje nekih Vaših posebnih dana (vjenčanja, rođendani, praznici…), ti dani veoma lahko mogu postati za Vas nezaboravan doživljaj.
 										</p>
@@ -47,7 +48,7 @@
 								<div class="box">
 									<div>
 										<h2>Naše <span>Usluge</span></h2>
-										<figure><img src="slike/str1_slika3.jpg" alt="" ></figure>
+										<figure><img src="slike/str1_slika3.jpg" width="250" height="150"></figure>
 										<ul class="list1 pad_dno1">
 											<li>
 												<br>U svome zatvorenom dijelu raspolaže sa 200, a u prirodnom ambijentu ljetne bašte sa 220 mjesta. Gostima je obezbjeđen parking sa 70 parking mjesta. Enterijer restorana, brižljivo dizajniran, kao i prirodno okruženje same ljetne bašte, teško da može ikoga ostaviti ravnodušnim, te zasigurno može odgovoriti najizbirljivijim ukusima i željama cijenjenih posjetilaca.
@@ -68,6 +69,7 @@
 				<article id="sadrzaj2" class="novost">
 					<div class="wrapper">
 						<section class="col-2-3">
+
 							<h2 class="novostiBoja"><br>Novosti<br></h2>
 							<br>
 						    <div id="novosti">

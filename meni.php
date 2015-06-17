@@ -23,8 +23,33 @@
 										<p class="pad_dno1">
 											- Dom Perinjon<br>Promjenljivi simbol klase i stila! Postao je omiljeno piće umjenika, poznatih i bogatih ljudi, piti ga - to je šik!<br>
 										</p>
+										<a href="http://opusteno.rs/nocni-zivot-f41/najbolja-vina-na-svetu-t17042.html" class="dugme1">Detaljnije...</a>
+									</div>
+								</div>
+							</div>
+						</section>
 
+						<section class="col-1-3">
+							<div class="wrap-col">
+								<div class="box">
+									<div>
+										<h2>Najbolja <span>Vina</span></h2>
 										<figure><img src="slike/str3_slika2.jpg" alt="" ></figure>
+										<p class="pad_dno1">
+											- Kaberne Sovinjon<br> Iz kompanije "Screaming Eagle", Kalifornija. Ova marka vina je kultno i veoma popularno piće u Kliforniji i šire jer asocira na unikatnost i elitni raritet. Godišenje se proizvodi samo 600 kutija ovog vina što iziskuje od ljubitelja stalnu potragu za ovom markom.<br>
+										</p>
+										<a href="http://opusteno.rs/nocni-zivot-f41/najbolja-vina-na-svetu-t17042.html" class="dugme1">Detaljnije...</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="col-1-3">
+							<div class="wrap-col">
+								<div class="box">
+									<div>
+										<h2>Najbolja <span>Vina</span></h2>
+										<figure><img src="slike/str3_slika3.jpg" alt="" ></figure>
 										<p class="pad_dno1">
 											- Penfolds Grange<br>Najpoznatije i najcjenjenije vino iz Australije. Prvi put se sa proizvodnjom krenulo 50-ih godina XX vjeka i tokom vremena tehnologija proizvodnje u Penfold Grange Vinariji se usavršavala<br>
 										</p>
@@ -33,6 +58,7 @@
 								</div>
 							</div>
 						</section>
+
 					</div>
 				</article>
 			</div>

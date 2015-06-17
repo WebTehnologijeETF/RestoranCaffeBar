@@ -19,16 +19,55 @@
 							<div class="wrap-col">
 								<div class="box">
 									<div>
-										<h2>Da li ste <span>Znali</span></h2>
-										<figure><img src="slike/str2_slika1.jpg" alt="" ></figure>
+										<h2>Da li ste <span>Znali ... ?</span></h2>
+										<figure><img src="slike/galerija0.jpg" width="250" height="150"></figure>
 										<p class="pad_dno1">
-											Ljekovita svojstva jagode poznata su još od antičkih vremena. Osim ploda, za liječenje se može koristiti korijen i  lišće jagode. Čaj od lišća jagode stoljećima se rabi kao lijek protiv probavnih smetnji, ekcema, upale grla, gripe i prehlade te u liječenju kostobolje.
+											... da su ljekovita svojstva jagode poznata još od antičkih vremena? Osim ploda, za liječenje se može koristiti korijen i  lišće jagode. Čaj od lišća jagode stoljećima se rabi kao lijek protiv probavnih smetnji, ekcema, upale grla, gripe i prehlade te u liječenju kostobolje.
 										</p>
 										<a href="http://alternativa-za-vas.com/index.php/clanak/article/jagoda" class="dugme1">Detaljnije...</a>
 									</div>
 								</div>
 							</div>
 						</section>
+
+						<section class="col-1-3">
+							<div class="wrap-col">
+								<div class="box">
+									<div>
+										<h2>Da li ste <span>Znali ... ?</span></h2>
+										<figure><img src="slike/galerija0_1.jpg" width="250" height="150"></figure>
+										<p class="pad_dno1">
+											... da riječ „curry” potiče od južnoindijske tamilske riječi „kari” (umak)? Englezi su začin otkrili u 18. vijeku u južnoj Aziji i preoblikovali su indijsku reč „kari” u „curry”.
+										</p>
+										<figure><img src="slike/galerija0_2.jpg" width="250" height="150"></figure>
+										<p class="pad_dno1">
+											... da je u srednjem vijeku buketić bosiljka značio poziv na ljubavnu igru?
+										</p>
+										<a href="" class="dugme1">Detaljnije...</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="col-1-3">
+							<div class="wrap-col">
+								<div class="box">
+									<div>
+										<h2>Da li ste <span>Znali ... ?</span></h2>
+										<figure><img src="slike/galerija0_3.jpg" width="250" height="150"></figure>
+										<p class="pad_dno1">
+											... da banane sadrže hemikaliju koja čini ljude sretnim?
+										</p>
+										<figure><img src="slike/galerija0_4.jpg" width="250" height="150"></figure>
+										<p class="pad_dno1">
+											... da će se dobro kuhano jaje okretati? Nekuhano ili slabo kuhano neće.
+										</p>
+										<a href="" class="dugme1">Detaljnije...</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
 					</div>
 				</article>
 			</div>
@@ -36,44 +75,19 @@
 	</div>
 <div class="body2">
 	<div class="main grid">
-		<article id="sadrzaj2">
 			<div class="wrapper">
 				<section>
-					<h2><br>Stavke</h2>
-					<div id="tabelaProizvodaDiv" class="wrapper">
-						<table id="tabelaProizvoda">
-							<tbody>
-								<tr>
-									<th>Id</th>
-									<th>Naziv</th>
-									<th>Opis</th>
-									<th>Slika</th>
-									<th>Url</th>
-									<th>Cijena</th>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Miješano meso</td>
-									<td>Neki opis ...................... </td>
-									<td><img src="slike/galerija1.jpg" alt=""></td>
-									<td><a href=""></a>Link</td>
-									<td>25 KM</td>
-										
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Rolovana piletina ala pizzaiola</td>
-									<td>Neki opis ...................... </td>
-									<td><img src="slike/galerija2.jpg" alt=""></td>
-									<td><a href=""></a>Link</td>
-									<td>18 KM</td>
-								</tr>						
-							</tbody>
-						</table>
-					</div>
+					<div class="gale"><img src="slike/galerija1.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija2.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija3.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija4.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija5.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija6.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija7.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija8.jpg" alt="" width="280" height="180"></div>
+					<div class="gale"><img src="slike/galerija9.jpg" alt="" width="280" height="180"></div>					
 				</section>
 			</div>
-		</article>
 	</div>
 </div>
 <div class="body3">

@@ -12,8 +12,6 @@
 	<div class="body1">
 		<div class="main grid">
 			<?php include("zaglavlje.php"); ?>
-
-			<?php include('novosti_skripte/validacijaMailaServer.php'); ?>
 		    
 		    <?php if(isset($_POST['ime']) && isset($_POST['mail']) && isset($_POST['ponovniMail']) && isset($_POST['poruka']) && ($_POST['ime']) && validacijaMail($_POST['mail']) && validacijaPonovniMail($_POST['mail'], $_POST['ponovniMail']) && validacijaPoruka($_POST['poruka'])) ; ?>
 			
